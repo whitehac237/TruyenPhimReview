@@ -110,6 +110,18 @@
             height: 100%;
             object-fit: cover; /* Giữ tỷ lệ ảnh và lấp đầy khung */
         }
+
+        @media (min-width: 768px) {
+            .content-section .image-gallery {
+                justify-content: space-between;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .content-section .image-gallery {
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -156,18 +168,18 @@
 
     <!-- Content Section -->
     <div class="content-section container text-center">
-        <div class="row image-gallery">
-            <div class="col-md-4">
+        <div class="row image-gallery justify-content-center">
+            <div class="col-md-4 d-flex justify-content-center">
                 <div class="image-container">
                     <img src="luffy.jpg" alt="Luffy">
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex justify-content-center">
                 <div class="image-container">
                     <img src="gojo.jpg" alt="Gojo">
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex justify-content-center">
                 <div class="image-container">
                     <img src="goku.jpg" alt="Goku">
                 </div>
